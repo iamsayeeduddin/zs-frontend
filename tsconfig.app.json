@@ -16,8 +16,9 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "outDir": "./dist",
-    "noEmit": false,
+    "noEmit": true,
     "jsx": "react-jsx",
+    "emitDeclarationOnly":true
 
     /* Linting */
     "strict": true,
