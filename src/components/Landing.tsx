@@ -2,8 +2,8 @@ import {
   Banner,
   CategoriesSection,
   HomeCollectionSection,
-} from "../components";
-import DesignerShowcase from "../components/DesginerSection";
+} from ".";
+import DesignerShowcase from "./DesginerSection";
 import VideoPlayer from "./VideoPlayer";
 
 const Landing = () => {
