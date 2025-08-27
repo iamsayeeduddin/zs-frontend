@@ -11,14 +11,12 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "outDir": "./dist",
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx",
-    "emitDeclarationOnly":true
 
     /* Linting */
     "strict": true,
