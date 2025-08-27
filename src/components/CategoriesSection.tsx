@@ -22,7 +22,7 @@ const CategoriesSection = () => {
                            bg-white rounded-xl shadow"
               >
                 <img
-                  src={`/src/images/${src}`}
+                   src={`/src/assets/${src}`}
                   alt={designers[1].name}
                   className="w-full h-full object-cover rounded-xl"
                 />
