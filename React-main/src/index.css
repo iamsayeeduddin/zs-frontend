@@ -1,0 +1,220 @@
+.embla {
+  overflow: hidden;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.embla__container {
+  display: flex;
+  will-change: transform;
+}
+.embla__slide {
+  min-width: 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Embla Carousel Styles */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  will-change: transform;
+}
+.embla__slide {
+  min-width: 100%;
+  position: relative;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+/* body{
+  background: #6d5e50;
+} */
+
+.footerBackground{
+  background: #661933;
+  color: rgba(216, 216, 77, 0.437);
+}
+.Headerbackground{
+  background: #b17770;
+}
+@layer base {
+  :root {
+    /* Luxury Fashion Color Palette */
+    --background: 40 10% 97%;
+    --foreground: 340 15% 15%;
+    
+    --card: 40 15% 95%;
+    --card-foreground: 340 15% 15%;
+    
+    --popover: 40 10% 97%;
+    --popover-foreground: 340 15% 15%;
+    
+    /* Deep burgundy primary */
+    --primary: 340 60% 25%;
+    --primary-foreground: 40 25% 95%;
+    
+    /* Warm gold secondary */
+    --secondary: 45 85% 55%;
+    --secondary-foreground: 340 15% 15%;
+    
+    /* Soft warm muted */
+    --muted: 40 20% 90%;
+    --muted-foreground: 340 10% 45%;
+    
+    /* Rich accent */
+    --accent: 25 45% 35%;
+    --accent-foreground: 40 25% 95%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 25% 95%;
+    
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 340 60% 25%;
+    
+    /* Luxury gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--secondary) / 0.1), hsl(var(--accent) / 0.05));
+    --gradient-hero: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    
+    /* Luxury shadows */
+    --shadow-luxury: 0 20px 40px -10px hsl(var(--primary) / 0.2);
+    --shadow-soft: 0 4px 20px -2px hsl(var(--foreground) / 0.1);
+    
+    /* Animation timings */
+    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s ease-out;
+    
+    --radius: 0.25rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark luxury theme */
+    --background: 340 20% 8%;
+    --foreground: 40 25% 95%;
+    
+    --card: 340 15% 12%;
+    --card-foreground: 40 25% 95%;
+    
+    --popover: 340 20% 8%;
+    --popover-foreground: 40 25% 95%;
+    
+    --primary: 340 70% 35%;
+    --primary-foreground: 40 25% 95%;
+    
+    --secondary: 45 75% 45%;
+    --secondary-foreground: 340 20% 8%;
+    
+    --muted: 340 15% 15%;
+    --muted-foreground: 40 10% 65%;
+    
+    --accent: 25 55% 25%;
+    --accent-foreground: 40 25% 95%;
+    
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 40 25% 95%;
+    
+    --border: 340 15% 20%;
+    --input: 340 15% 20%;
+    --ring: 340 70% 35%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+   /* * {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+  } */
+
+  body {
+    /* ...existing code... */
+  }
+  
+  /* Luxury typography */
+  .luxury-heading {
+    font-family: serif;
+    color: hsl(var(--foreground));
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .luxury-subheading {
+    color: hsl(var(--muted-foreground));
+    letter-spacing: 0.1em;
+    font-weight: 300;
+  }
+
+  /* Custom animations */
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .luxury-hover {
+    transition: all 0.5s;
+    /* scale and shadow on hover */
+  }
+
+  .luxury-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  /* Hero overlay */
+  .hero-overlay {
+    background: var(--gradient-hero);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fourSectoinLayOut{
+  background: #b17770;
+}
+
+.containerBg{
+  background-color: red;
+}
