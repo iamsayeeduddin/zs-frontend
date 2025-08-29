@@ -5,7 +5,7 @@ const CategoryItem = ({ categoryTitle, image, link } : { categoryTitle: string; 
     <div className="w-[600px] relative max-[1250px]:w-[400px]  max-sm:w-[300px]">
         <Link to={`/shop/${link}`}>
           <div className="burgundy-gradient-img-container h-[40rem] w-full rounded-xl ">
-            <img src={`/src/images/${image}`} className="h-full w-full object-cover rounded-xl" />
+            <img src={`/src/assets/${image}`} className="h-full w-full object-cover rounded-xl" />
              <div
             style={{
               position: 'absolute',
